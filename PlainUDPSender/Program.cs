@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlainUDPReceiver__and_XML_and_JSON_
+namespace PlainUDPSender
 {
     class Program
     {
@@ -12,12 +12,10 @@ namespace PlainUDPReceiver__and_XML_and_JSON_
 
         static void Main(string[] args)
         {
-            UDPReceiver udpRecieverService = new UDPReceiver(Port);
-            udpRecieverService.Start();
+            UDPSender udpSenderService = new UDPSender(Port);
+            udpSenderService.Start();
 
             Console.ReadLine();
-
-
         }
     }
 }
